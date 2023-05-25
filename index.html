@@ -1,12 +1,164 @@
 <!DOCTYPE html>
 <html lang="ru">
+
   <head>
     <meta charset="utf-8">
+    <meta name="viewport" content="width=device-width, initial-scale=1.0">
+    <meta name="description" content="Учебный проект от HTML academy.">
+    <link rel="stylesheet" href="styles/styles.css">
     <title>HTML Academy: Глейси</title>
   </head>
-  <body>
 
-    <p>Репозиторий создан для обучения на профессиональном онлайн‑курсе «<a href="https://htmlacademy.ru/intensive/htmlcss">HTML и CSS. Профессиональная вёрстка сайтов</a>».</p>
+  <body>
+    <div class="page-wrapper">
+      <header class="page-header">
+        <nav class="navigation-list">
+          <a class="header-logo-link" href="index.html">
+            <img class="header-logo-image" src="./images/header-gllacy-logo.svg" width="137" height="56"
+              alt="Логотип интернет магазина Глейси.">
+          </a>
+          <button class="button navigation-link">Каталог</button>
+          <a class="button navigation-link" href="#">Доставка и оплата</a>
+          <a class="button navigation-link" href="#">О компании</a>
+        </nav>
+        <div class="user-list">
+          <a class="user-phone-link button" href="tel:+78005558628">+7 800 555-86-28</a>
+          <input class="user-search  button" placeholder="Поиск по сайту" aria-label="Поиск по сайту." type="text"
+            required>
+          <a class="user-login button" href="#">Вход</a>
+          <a class="user-cart button" href="#">Корзина</a>
+        </div>
+      </header>
+
+      <main class="page-main">
+        <h1></h1>
+        <section class="slider">
+          <h2></h2>
+          <div class="slider-wrapper">
+            <h3>Нежный пломбир с клубничным джемом</h3>
+            <p>Натуральное мороженое из свежих сливок и молока с вкуснейшим клубничным джемом – это идеальный десерт для
+              всей семьи.</p>
+            <img class="slider-image" src="./images/slider-ice-cream-strawberry.png" width="327" height="507"
+              alt="Пломбир с клубничным джемом.">
+            <img class="slider-image" src="./images/slider-ice-cream-banana.png" width="66" height="150"
+              alt="Мороженое со вкусом банана.">
+            <img class="slider-image" src="./images/slider-ice-cream-caramel.png" width="66" height="150"
+              alt="Карамельный пломбир с маршмеллоу.">
+            <button class="button button-decorated" type="button">Заказать</button>
+          </div>
+
+          <div class="slider-wrapper">
+            <h3>Сливочное мороженое со вкусом банана</h3>
+            <p>Сливочное мороженое с ярким банановым вкусом подарит вам свежесть и наслаждение даже в самый жаркий
+              летний день.</p>
+            <img class="slider-image" src="./images/slider-ice-cream-banana.png" width="327" height="507"
+              alt="Мороженое со вкусом банана.">
+            <img class="slider-image" src="./images/slider-ice-cream-caramel.png" width="66" height="150"
+              alt="Карамельный пломбир с маршмеллоу.">
+            <img class="slider-image" src="./images/slider-ice-cream-strawberry.png" width="66" height="150"
+              alt="Пломбир с клубничным джемом.">
+            <button class="button button-decorated" type="button">Заказать</button>
+          </div>
+
+          <div class="slider-wrapper">
+            <h3>Карамельный пломбир с маршмеллоу</h3>
+            <p>Необычный сладкий десерт с карамельным топпингом и кусочками зефира завоюет сердца сладкоежек всех
+              возрастов.</p>
+            <img class="slider-image" src="./images/slider-ice-cream-caramel.png" width="327" height="507"
+              alt="Карамельный пломбир с маршмеллоу.">
+            <img class="slider-image" src="./images/slider-ice-cream-strawberry.png" width="66" height="150"
+              alt="Пломбир с клубничным джемом.">
+            <img class="slider-image" src="./images/slider-ice-cream-banana.png" width="66" height="150"
+              alt="Мороженое со вкусом банана.">
+            <button class="button button-decorated" type="button">Заказать</button>
+          </div>
+          <div class="slider-pagination"></div>
+          <div class="slider-social"></div>
+        </section>
+
+        <section class="for-free">
+          <h3>Заказывайте мороженое и получайте подарки!</h3>
+          <div class="for-free-wrapper">
+            <h4>Малинка даром!</h4>
+            <p>При покупке 2 кг любого фруктового мороженого добавим в ваш заказ банку малинового варенья бесплатно.</p>
+            <img class="for-free-image" src="./images/raspberries-for-free.png" width="219" height="268"
+              alt="Вафельный рожок с малиной.">
+            <button class="button button-decorated" type="button">Хочу подарок</button>
+          </div>
+          <div class="for-free-wrapper">
+            <h4>Маршмеллоу даром!</h4>
+            <p>При покупке 2 кг пломбира добавим в ваш заказ упаковку нежных зефирок совершенно бесплатно.</p>
+            <img class="for-free-image" src="./images/marshmallow-for-free.png" width="219" height="268"
+              alt="Вафельный рожок с маршмеллоу.">
+            <button class="button button-decorated" type="button">Хочу подарок</button>
+          </div>
+        </section>
+
+        <section class="popular-ice-cream">
+          <h3>Попробуйте самые популярные вкусы нашего мороженого</h3>
+          <ul class="popular-ice-cream-list">
+          <li class="popular-ice-cream-item">
+            <img class="popular-image" src="./images/ice-cream-raspberries.png" width="168" height="168"
+              alt="Сливочное мороженое с малиновым джемом.">
+            <a class="popular-ice-cream-title" href="#">Малинка</a>
+            <p>Сливочное мороженое с малиновым джемом</p>
+            <span>310 ₽/кг</span>
+            <button class="button button-popular" type="button" aria-label="Добавить в корзину"></button>
+          </li>
+
+          <li class="popular-ice-cream-item">
+            <img class="popular-image" src="./images/ice-cream-pistachio.png" width="168" height="168"
+              alt="Фисташковый пломбир с кусочками шоколада.">
+            <a class="popular-ice-cream-title" href="#">Фисташка</a>
+            <p>Фисташковый пломбир с кусочками шоколада</p>
+            <span>340 ₽/кг</span>
+            <button class="button button-popular" type="button"  aria-label="Добавить в корзину"></button>
+          </li>
+
+          <li class="popular-ice-cream-item">
+            <img class="popular-image" src="./images/ice-cream-blueberry.png" width="168" height="168"
+              alt="Крем-брюле с черничным джемом.">
+            <a class="popular-ice-cream-title" href="#">Черника</a>
+            <p>Крем-брюле с черничным джемом</p>
+            <span>330 ₽/кг</span>
+            <button class="button button-popular" type="button" aria-label="Добавить в корзину"></button>
+          </li>
+
+          <li class="popular-ice-cream-item">
+            <img class="popular-image" src="./images/ice-cream-bubble-gum.png" width="168" height="168"
+              alt="Ванильный пломбир со сладкой посыпкой.">
+            <a class="popular-ice-cream-title" href="#">Бабл-гам</a>
+            <p>Ванильный пломбир со сладкой посыпкой</p>
+            <span>320 ₽/кг</span>
+            <button class="button button-popular" type="button"  aria-label="Добавить в корзину"></button>
+          </li>
+        </ul>
+        </section>
+
+        <section class="advantages">
+          <h3>Магазин Глейси – это онлайн и офлайн-магазин по продаже мороженого собственного производства на развес
+          </h3>
+          <img class="advantages-image" src="./images/background-waffle.png" width="1170" height="480" alt="Фон вафля.">
+          <ul class="advantages-list">
+            <li class="advantages-item">Всё наше мороженое изготавливается на собственном производстве с использованием
+              современного оборудования и проверенных временем технологий.</li>
+            <li class="advantages-item">Для приготовления мороженого используются сливки и молоко высочайшего качества.
+              Все ингредиенты и добавки произведены из натурального сырья.</li>
+            <li class="advantages-item">Закупка ингредиентов производится только у проверенных фермерских хозяйств, с
+              которыми нас связывает долговременное сотрудничество.</li>
+            <li class="advantages-item">Доставка нашего мороженого осуществляется в специальном термопаке, который не
+              даёт мороженому растаять и позволяет сохранить превосходный вкус.</li>
+          </ul>
+        </section>
+
+        <section class="">
+
+        </section>
+      </main>
+      <footer class="page-footer"></footer>
+
+    </div>
 
   </body>
+
 </html>
