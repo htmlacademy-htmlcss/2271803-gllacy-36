@@ -21,11 +21,6 @@
             <li class="header-navigation-item">
               <div class="subcatalog-container">
                 <button class="catalog-button navigation-link" type="button">Каталог
-                  <svg width="16" height="17" viewBox="0 0 16 17" fill="none" xmlns="http://www.w3.org/2000/svg">
-                    <path fill-rule="evenodd" clip-rule="evenodd"
-                      d="M3.80812 7.0532C3.54777 6.79285 3.12566 6.79285 2.86531 7.0532C2.60496 7.31355 2.60496 7.73566 2.86531 7.99601L7.52565 12.6564C7.52771 12.6585 7.52979 12.6606 7.53189 12.6627C7.66259 12.7934 7.83404 12.8585 8.00534 12.8579C8.1753 12.8574 8.34511 12.7924 8.47478 12.6627C8.47687 12.6606 8.47894 12.6585 8.48099 12.6564L13.1414 7.99601C13.4017 7.73566 13.4017 7.31355 13.1414 7.0532C12.881 6.79285 12.4589 6.79285 12.1986 7.0532L8.00334 11.2484L3.80812 7.0532Z"
-                      fill="#2D3440" />
-                  </svg>
                 </button>
                 <ul class="subcatalog-list">
                   <li class="subcatalog-item">
@@ -74,7 +69,7 @@
               <form class="login-form" action="https://echo.htmlacademy.ru/" method="get">
                 <input class="email-input input" type="text" name="e-mail" value="email@example.com"
                   aria-label="Поле ввода почты." required>
-                <input class="password-input input" type="password" name="password" value="qwerty"
+                <input class="password-input input" type="password" name="password" value="*****"
                   aria-label="Поле ввода пароля." required>
                 <button class="login-form-button button" type="submit">Вход</button>
                 <div class="login-container-link">
@@ -85,9 +80,9 @@
             </div>
           </div>
 
-          <!--Для показа пустой страницы добавить класс cart-item-empty для cart-item-->
+          <!--Для показа пустой корзины замените класс not-empty-cart на empty-cart-->
 
-          <div class="cart-item">
+          <div class="cart-item not-empty-cart">
             <button class="user-button cart-button" type="button">
               <span class="have-item">2 Товара</span>
               <span class="have-no-item">Нет товаров</span>
@@ -263,7 +258,7 @@
           <ul class="catalog-list">
             <li class="catalog-item">
               <img class="catalog-image" src="./images/ice-cream-raspberries.png" width="168" height="168"
-                alt="Сливочное мороженое с малиновым джемом.">
+                alt="Изображение мороженого Малинка.">
               <a class="catalog-title" href="#">Малинка</a>
               <p class="catalog-discription">Сливочное мороженое с малиновым джемом</p>
               <div class="catalog-product-wrapper">
@@ -274,7 +269,7 @@
 
             <li class="catalog-item">
               <img class="catalog-image" src="./images/ice-cream-pistachio.png" width="168" height="168"
-                alt="Фисташковый пломбир с кусочками шоколада.">
+                alt="Изображение мороженого Фисташка.">
               <a class="catalog-title" href="#">Фисташка</a>
               <p class="catalog-discription">Фисташковый пломбир с кусочками шоколада</p>
               <div class="catalog-product-wrapper">
@@ -285,7 +280,7 @@
 
             <li class="catalog-item">
               <img class="catalog-image" src="./images/ice-cream-blueberry.png" width="168" height="168"
-                alt="Крем-брюле с черничным джемом.">
+                alt="Изображение мороженого Черника.">
               <a class="catalog-title" href="#">Черника</a>
               <p class="catalog-discription">Крем-брюле с черничным джемом</p>
               <div class="catalog-product-wrapper">
@@ -296,7 +291,7 @@
 
             <li class="catalog-item">
               <img class="catalog-image" src="./images/ice-cream-bubble-gum.png" width="168" height="168"
-                alt="Ванильный пломбир со сладкой посыпкой.">
+                alt="Изображение мороженого Бабл-гам.">
               <a class="catalog-title" href="#">Бабл-гам</a>
               <p class="catalog-discription">Ванильный пломбир со сладкой посыпкой</p>
               <div class="catalog-product-wrapper">
@@ -354,10 +349,9 @@
             <form class="delivery-form" action="https://echo.htmlacademy.ru/" method="post">
 
               <label class="data-label">
-                <span class="data-title">
-                  Дата
-                  <span class="icon"></span>
-                  <span class="data-icon-content">Введите дату</span>
+                Дата
+                <span class="tooltip">
+                  <span class="data-tooltip-content">Введите дату</span>
                 </span>
                 <input class="data-input input" type="text" name="delivery-date" placeholder="01.04.2020">
               </label>
@@ -368,10 +362,9 @@
               </label>
 
               <label class="address-label">
-                <span class="address-title">
-                  Адрес
-                  <span class="icon"></span>
-                  <span class="address-icon-content">Введите название улицы, дома и квартиры</span>
+                Адрес
+                <span class="tooltip">
+                  <span class="address-tooltip-content">Введите название улицы, дома и квартиры</span>
                 </span>
                 <input class="phone-input input" type="text" name="delivery-address"
                   placeholder="ул. Большая Конюшенная, 19/8">
