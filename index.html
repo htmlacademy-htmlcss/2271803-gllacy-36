@@ -5,8 +5,8 @@
     <meta charset="utf-8">
     <meta name="viewport" content="width=device-width, initial-scale=1.0">
     <meta name="description" content="Учебный проект от HTML academy.">
-    <link rel="stylesheet" href="styles/styles.css">
     <title>HTML Academy: Глейси</title>
+    <link rel="stylesheet" href="styles/styles.css">
   </head>
 
   <body>
@@ -130,7 +130,7 @@
                 </ul>
 
                 <div class="cart-product-total">
-                  <button class="shopping-button button button-decorated" type="button">Оформить заказ</button>
+                  <button class="shopping-button button" type="button">Оформить заказ</button>
                   <span class="total-price">Итого: 790 ₽</span>
                 </div>
               </div>
@@ -146,12 +146,12 @@
           <div class="slider-container">
             <div class="slider-wrapper">
               <ul class="slider-list">
-                <li class="slider-item">
+                <li class="slider-item current-slide" data-theme="#FEAFC3">
                   <div class="slider-content">
                     <h3 class="slider-content-title">Нежный пломбир с клубничным джемом</h3>
                     <p class="slider-content-description">Натуральное мороженое из свежих сливок
                       и молока с вкуснейшим клубничным джемом – это идеальный десерт для всей семьи.</p>
-                    <a class="button button-decorated" href="#">Заказать</a>
+                    <a class="button" href="#">Заказать</a>
                     <div class="slider-image-wrapper">
                       <img class="slider-image" src="./images/slider-ice-cream-strawberry.png" width="327" height="507"
                         alt="Пломбир с клубничным джемом.">
@@ -159,14 +159,14 @@
                   </div>
                 </li>
 
-                <li class="slider-item">
+                <li class="slider-item" data-theme="#69A9FF">
                   <div class="slider-content">
                     <h3 class="slider-content-title">Сливочное мороженое со вкусом банана</h3>
                     <p class="slider-content-description">Сливочное мороженое с ярким банановым вкусом подарит вам
                       свежесть и наслаждение даже в самый
                       жаркий
                       летний день.</p>
-                    <a class="button button-decorated" href="#">Заказать</a>
+                    <a class="button" href="#">Заказать</a>
                   </div>
                   <div class="slider-image-wrapper">
                     <img class="slider-image" src="./images/slider-ice-cream-banana.png" width="327" height="507"
@@ -174,14 +174,14 @@
                   </div>
                 </li>
 
-                <li class="slider-item">
+                <li class="slider-item" data-theme="#FCC850">
                   <div class="slider-content">
                     <h3 class="slider-content-title">Карамельный пломбир с маршмеллоу</h3>
                     <p class="slider-content-description">Необычный сладкий десерт с карамельным топпингом и кусочками
                       зефира завоюет сердца сладкоежек
                       всех
                       возрастов.</p>
-                    <a class="button button-decorated" href="#">Заказать</a>
+                    <a class="button" href="#">Заказать</a>
                   </div>
                   <div class="slider-image-wrapper">
                     <img class="slider-image" src="./images/slider-ice-cream-caramel.png" width="327" height="507"
@@ -240,7 +240,7 @@
               </p>
               <img class="for-free-image" src="./images/raspberries-for-free.png" width="219" height="268"
                 alt="Вафельный рожок с малиной.">
-              <a class="for-free-link button button-decorated" href="#">Хочу подарок</a>
+              <a class="for-free-link button" href="#">Хочу подарок</a>
             </li>
             <li class="for-free-item">
               <h4 class="for-free-title">Маршмеллоу даром!</h4>
@@ -248,7 +248,7 @@
                 совершенно бесплатно.</p>
               <img class="for-free-image" src="./images/marshmallow-for-free.png" width="219" height="268"
                 alt="Вафельный рожок с маршмеллоу.">
-              <a class="for-free-link button button-decorated" href="#">Хочу подарок</a>
+              <a class="for-free-link button" href="#">Хочу подарок</a>
             </li>
           </ul>
         </section>
@@ -382,7 +382,7 @@
             <span class="contacts-phone-title">Для заказов по телефону:</span>
             <a class="contacts-phone">+7 (812) 812-12-12</a>
             <span class="contacts-working-time">(с 10 до 20 ежедневно)</span>
-            <a class="modal-link button button-decorated" href="#">Форма обратной связи</a>
+            <a class="modal-link button" href="#">Форма обратной связи</a>
           </div>
 
         </section>
@@ -403,11 +403,11 @@
         </ul>
 
 
-        <div class="footer-navigation">
-          <h3 class="footer-navigation-provider">Для поставщиков</h3>
-          <a class="footer-navigation-documets" href="#">Наши документы</a>
-          <a class="footer-navigation-about-production" href="#">О производстве</a>
-          <a class="footer-navigation-eco-standarts" href="#">Экологические стандарты</a>
+        <div class="for-providers">
+          <h3 class="for-providers-title">Для поставщиков</h3>
+          <a class="for-providers-documets" href="#">Наши документы</a>
+          <a class="for-providers-about-production" href="#">О производстве</a>
+          <a class="for-providers-eco-standarts" href="#">Экологические стандарты</a>
         </div>
 
         <div class="footer-logo-container">
