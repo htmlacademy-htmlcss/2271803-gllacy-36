@@ -1443,3 +1443,86 @@ a {
   top: 0;
   left: 0;
 }
+
+/* BLOG-AND-SUBSCRIBE */
+
+.blog-and-subscribe {
+  display: flex;
+  flex-wrap: wrap;
+  gap: 30px;
+}
+
+.blog {
+  width: 570px;
+  background-image: url("../images/background-news.jpg");
+  background-color: #fefefe;
+  background-repeat: no-repeat;
+  border-radius: 16px;
+  padding: 32px 230px 67px 32px;
+}
+
+.blog-title {
+  font-weight: 400;
+  font-size: 16px;
+  line-height: 20px;
+  color: #565c66;
+  margin: 0 0 12px 0;
+}
+
+.blog-title-link {
+  margin: 0;
+  font-weight: 700;
+  font-size: 24px;
+  line-height: 30px;
+  color: #2d3440;
+}
+
+.blog-title-link:hover {
+  opacity: 0.7;
+}
+
+.blog-title-link:active {
+  opacity: 0.4;
+}
+
+.subscribe {
+  width: 570px;
+  background-image: url("../images/background-subscription.png");
+  background-color: #f6f6f6;
+  background-repeat: no-repeat;
+  background-size: cover;
+  background-position: 10% -10%;
+  border-radius: 16px;
+  padding: 32px;
+  position: relative;
+  z-index: 1;
+}
+
+.subscribe::before {
+  content: "";
+  position: absolute;
+  top: 6px;
+  left: 6px;
+  background-color: #ffffff;
+  border-radius: 16px;
+  width: calc(100% - 12px);
+  height: calc(100% - 12px);
+  z-index: -1;
+}
+
+.subscribe-description {
+  margin: 0 0 42px 0;
+}
+
+.subscribe-form {
+  display: flex;
+  align-items: center;
+  gap: 14px;
+}
+
+.subscribe-form-input {
+  min-width: 250px;
+  height: 42px;
+  padding: 0 0 0 16px;
+  flex-grow: 1;
+}
