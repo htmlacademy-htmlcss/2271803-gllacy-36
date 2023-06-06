@@ -1352,3 +1352,94 @@ a {
 .add-to-cart-button:disabled::before {
   background-color: #565c66;
 }
+
+/* ADVANTAGES */
+
+.advantages {
+  padding: 80px 64px 80px 64px;
+  position: relative;
+  background-image: url("../images/background-waffle.png");
+  background-color: #f6f6f6;
+  background-repeat: no-repeat;
+  background-size: cover;
+  background-position: 10% -10%;
+  border-radius: 16px;
+  z-index: 1;
+}
+
+.advantages::before {
+  content: "";
+  position: absolute;
+  background-color: #ffffff;
+  top: 24px;
+  left: 24px;
+  width: calc(100% - 48px);
+  height: calc(100% - 48px);
+  border-radius: 16px;
+  z-index: -1;
+}
+
+.advantages-title {
+  text-align: center;
+  margin: 0 0 56px 0;
+}
+
+.advantages-list {
+  list-style-type: none;
+  padding: 0;
+  margin: 0;
+  display: grid;
+  grid-template-columns: 1fr 1fr;
+  row-gap: 40px;
+  column-gap: 31px;
+}
+
+.advantages-item {
+  padding: 0 0 0 64px;
+  margin: 0;
+  position: relative;
+}
+
+.advantages-production::before {
+  content: "";
+  position: absolute;
+  background-image: url("../images/advantages-production.svg");
+  background-repeat: no-repeat;
+  width: 48px;
+  height: 48px;
+  top: 0;
+  left: 0;
+}
+
+.advantages-farm::before {
+  content: "";
+  position: absolute;
+  background-image: url("../images/advantages-farm.svg");
+  background-repeat: no-repeat;
+  width: 48px;
+  height: 48px;
+  top: 0;
+  left: 0;
+}
+
+.advantages-ingredient::before {
+  content: "";
+  position: absolute;
+  background-image: url("../images/advantages-ingredient.svg");
+  background-repeat: no-repeat;
+  width: 48px;
+  height: 48px;
+  top: 0;
+  left: 0;
+}
+
+.advantages-delivery::before {
+  content: "";
+  position: absolute;
+  background-image: url("../images/advantages-delivery.svg");
+  background-repeat: no-repeat;
+  width: 48px;
+  height: 48px;
+  top: 0;
+  left: 0;
+}
