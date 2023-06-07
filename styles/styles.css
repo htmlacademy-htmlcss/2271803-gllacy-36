@@ -1526,3 +1526,156 @@ a {
   padding: 0 0 0 16px;
   flex-grow: 1;
 }
+
+/* DELIVERY */
+
+.delivery {
+  display: flex;
+  padding: 64px;
+  padding-left: 100px;
+  background-color: #f6f6f6;
+  background-image: url("../images/background-delivery.jpg");
+  background-repeat: no-repeat;
+  background-size: contain;
+  border-radius: 16px;
+  position: relative;
+}
+
+.delivery-container {
+  padding: 103px 35px 103px 0;
+  margin: 0 100px 0 0;
+}
+
+.delivery-title {
+  margin: 0 0 24px 0;
+}
+
+.delivery-description {
+  margin: 0;
+}
+
+.delivery-details {
+  padding: 40px;
+  padding-bottom: 42px;
+  background-color: #fcfcfc;
+  box-shadow: 0 15px 40px rgba(45, 52, 64, 0.12);
+  border-radius: 8px;
+  width: 500px;
+  align-self: start;
+}
+
+.delivery-form {
+  display: flex;
+  flex-wrap: wrap;
+  row-gap: 20px;
+  column-gap: 16px;
+}
+
+.delivery-description {
+  margin: 0 0 32px 0;
+}
+
+.data-label,
+.phone-label,
+.address-label {
+  display: flex;
+  flex-direction: column;
+  color: #2D3440;
+  margin: 0;
+  position: relative;
+}
+
+.data-label{
+  width: 117px;
+}
+
+.phone-label{
+  width: 287px;
+}
+
+.address-label {
+  width: 420px;
+  margin: 0 0 12px 0;
+}
+
+.label-description {
+  width: fit-content;
+  max-width: 100%;
+  margin: 0 0 8px 0;
+  padding: 0;
+  font-weight: 700;
+  font-size: 16px;
+  line-height: 20px;
+  position: relative;
+  padding: 0 16px 0 0;
+}
+
+.data-description::before,
+.address-description::before {
+  content: "";
+  position: absolute;
+  top: 3px;
+  right: 0;
+  width: 14px;
+  height: 14px;
+  background-image: url("../images/delivery-tooltip.svg");
+  background-repeat: no-repeat;
+}
+
+.delivery-input {
+  height: 48px;
+  padding: 0 0 0 16px;
+}
+
+.tooltip-content {
+  display: none;
+  position: absolute;
+  background-color: #fcfcfc;
+  box-shadow: 0 4px 8px rgba(194, 194, 194, 0.2);
+  border: 1px solid #b9b9b9;
+  border-radius: 1px;
+  z-index: 2;
+  width: max-content;
+  padding: 10px 8px 10px 8px;
+  max-width: 180px;
+  font-weight: 400;
+  font-size: 12px;
+  line-height: 16px;
+  top: -7px;
+  left: calc(100% + 9px);
+  }
+
+.data-description:hover .tooltip-content {
+  display: block;
+}
+
+.address-description:hover .tooltip-content {
+  display: block;
+}
+
+.tooltip-content::before {
+  content: "";
+  position: absolute;
+  width: 11px;
+  height: 11px;
+  background-color: #fcfcfc;
+  border: 1px solid #b9b9b9;
+  top: 11px;
+  left: -6px;
+  transform: rotate(45deg);
+}
+
+.tooltip-content::after {
+  content: "";
+  position: absolute;
+  width: 8px;
+  height: 16px;
+  background-color: #fcfcfc;
+  top: 8px;
+  left: 0;
+}
+
+.delivery-submit-button {
+  align-self: center;
+  margin: auto;
+}
