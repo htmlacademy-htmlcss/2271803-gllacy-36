@@ -1679,3 +1679,58 @@ a {
   align-self: center;
   margin: auto;
 }
+
+/* CONTACTS */
+
+.contacts {
+  display: flex;
+  padding: 64px;
+  background-image: url("../images/background-feedback.jpg");
+  background-repeat: no-repeat;
+  background-size: cover;
+  background-position: center;
+  background-color: #f6f6f6;
+  border-radius: 16px;
+}
+
+.contacts-container {
+  padding: 40px 40px 42px 40px;
+  background-color: #fcfcfc;
+  box-shadow: 0 15px 40px rgba(45, 52, 64, 0.12);
+  border-radius: 8px;
+  display: flex;
+  flex-direction: column;
+  max-width: 343px;
+}
+
+.contacts-title,
+.contacts-phone-title {
+  font-weight: 400;
+  font-size: 16px;
+  line-height: 22px;
+  color: #565c66;
+  margin: 0 0 12px 0;
+}
+
+.contacts-address,
+.contacts-phone {
+  margin: 0;
+  font-weight: 700;
+  font-size: 20px;
+  line-height: 24px;
+  color: #2d3440;
+}
+
+.contacts-address {
+  margin: 0 0 24px 0;
+}
+
+.contacts-working-time {
+  font-size: 14px;
+  line-height: 20px;
+  margin: 0 0 32px 0;
+}
+
+.modal-link {
+  align-self: center;
+}
