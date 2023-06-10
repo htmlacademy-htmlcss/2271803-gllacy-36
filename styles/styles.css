@@ -390,10 +390,12 @@ a {
 }
 
 .user-list {
-  display: flex;
-  align-items: center;
   max-width: 450px;
   justify-content: flex-end;
+  padding: 12px 0 12px 0;
+  display: flex;
+  list-style-type: none;
+  margin: 0;
 }
 
 .user-item {
@@ -461,12 +463,14 @@ a {
 }
 
 .user-phone-number {
+  display: flex;
   font-weight: 700;
   font-size: 16px;
   line-height: 20px;
   color: #2D3440;
   padding: 6px 0 6px 0;
   margin-right: 16px;
+  white-space: nowrap;
 }
 
 .user-phone-number:hover {
@@ -537,6 +541,13 @@ a {
 
 .search-input::-webkit-search-cancel-button {
   display: none;
+}
+
+.search-input::-webkit-search-decoration,
+.search-input::-webkit-search-cancel-button,
+.search-input::-webkit-search-results-button,
+.search-input::-webkit-search-results-decoration {
+  appearance: none;
 }
 
 .input:hover {
@@ -706,12 +717,15 @@ a {
 }
 
 .cart-button {
-  min-width: 115x;
   min-height: 32px;
   padding: 4px 14px 4px 36px;
   border-radius: 30px;
   align-items: center;
   align-self: start;
+  margin: 0;
+  white-space: nowrap;
+  font-size: 14px;
+line-height: 20px;
 }
 
 .cart-button::before {
@@ -734,6 +748,13 @@ a {
   display: inline;
 }
 
+.cart-empty-text {
+  text-align: center;
+  font-weight: 700;
+font-size: 24px;
+line-height: 30px;
+}
+
 .cart-full .cart-full-description {
   display: inline;
 }
@@ -754,7 +775,7 @@ a {
 }
 
 .cart-full-container {
-  display: flex;
+  display: none;
   padding: 48px;
   flex-wrap: wrap;
   width: 441px;
@@ -860,14 +881,15 @@ a {
   background-image: url("../images/header-cart-delete-button.svg");
   background-repeat: no-repeat;
   cursor: pointer;
+  background-position: center;
 }
 
 .delete-product-button:hover {
-  opacity: 0.6;
+  opacity: 0.7;
 }
 
 .delete-product-button:active {
-  opacity: 0.3;
+  opacity: 0.4;
 }
 
 .cart-product-total {
@@ -924,7 +946,7 @@ a {
 .slider-content {
   display: none;
   width: 526px;
-  padding: 136px 10px 136px 70px;
+  padding: 136px 10px 126px 70px;
 }
 
 .current-slide .slider-content {
@@ -971,7 +993,7 @@ a {
 
 .current-slide .slider-image-wrapper {
   width: 367px;
-  height: 554px;
+  height: 100%;
   margin: 0;
   opacity: 1;
 }
