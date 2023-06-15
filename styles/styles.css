@@ -51,10 +51,6 @@ img {
   object-fit: contain;
 }
 
-a {
-  text-decoration: none;
-}
-
 .visually-hidden {
   position: absolute;
   width: 1px;
@@ -107,6 +103,7 @@ a {
   outline: 4px solid rgba(252, 252, 252, 0.4);
   box-shadow: 0 4px 12px rgba(45, 52, 64, 0.1);
   border: none;
+  text-decoration: none;
   transition: background-color 0.3s ease, outline 0.3s ease, box-shadow 0.3s ease;
 }
 
@@ -142,6 +139,7 @@ a {
   outline: 4px solid rgba(255, 47, 100, 0.3);
   box-shadow: 0 4px 12px rgba(45, 52, 64, 0.1);
   border: none;
+  text-decoration: none;
   transition: color 0.3s ease, background-color 0.3s ease, outline 0.3s ease, box-shadow 0.3s ease;
 }
 
@@ -221,6 +219,7 @@ a {
   display: inline-flex;
   padding: 8px 16px;
   margin: 0;
+  text-decoration: none;
 }
 
 .navigation-link:hover {
@@ -246,6 +245,7 @@ a {
   line-height: 16px;
   overflow: hidden;
   margin-right: 16px;
+  text-decoration: none;
 }
 
 .header-logo-link:hover {
@@ -357,6 +357,7 @@ a {
   min-width: 138px;
   flex-wrap: nowrap;
   align-items: flex-start;
+  text-decoration: none;
 }
 
 .subcatalog-link:hover,
@@ -404,6 +405,7 @@ a {
   position: relative;
   align-self: start;
   display: flex;
+  text-decoration: none;
 }
 
 .user-button {
@@ -472,6 +474,7 @@ a {
   color: #2D3440;
   padding: 6px 0 6px 0;
   margin-right: 16px;
+  text-decoration: none;
 }
 
 .user-phone-number:hover {
@@ -702,6 +705,7 @@ a {
   font-size: 14px;
   line-height: 20px;
   color: #2d3440;
+  text-decoration: none;
 }
 
 .login-help::before {
@@ -866,6 +870,7 @@ a {
   line-height: 22px;
   color: #2d3440;
   margin: 0 0 4px 0;
+  text-decoration: none;
 }
 
 .cart-product-title:hover {
@@ -1165,6 +1170,7 @@ a {
   position: relative;
   transition: border-color 0.3s ease;
   outline: none;
+  text-decoration: none;
 }
 
 .social-link::before {
@@ -1298,6 +1304,7 @@ a {
 .main-catalog-title {
   text-align: center;
   margin: 0 0 56px 0;
+  text-decoration: none;
 }
 
 .catalog-list {
@@ -1573,6 +1580,7 @@ a {
   font-size: 24px;
   line-height: 30px;
   color: #2d3440;
+  text-decoration: none;
 }
 
 .blog-title-link:hover {
@@ -1828,6 +1836,14 @@ a {
   color: #2d3440;
 }
 
+.contacts-phone:hover {
+  opacity: 0.7;
+}
+
+.contacts-phone:active {
+  opacity: 0.4;
+}
+
 .contacts-address {
   margin: 0 0 24px 0;
 }
@@ -1893,6 +1909,7 @@ a {
   line-height: 20px;
   color: #2d3440;
   padding: 0 0 0 24px;
+  text-decoration: none;
 }
 
 .for-providers-link:hover {
@@ -1998,6 +2015,7 @@ a {
   line-height: 20px;
   color: #2d3440;
   position: relative;
+  text-decoration: none;
 }
 
 .breadcrumbs-link:not(.current-breadcrumbs-link):hover {
@@ -2379,6 +2397,7 @@ a {
   width: 16px;
   height: 16px;
   position: relative;
+  text-decoration: none;
 }
 
 .catalog-pagination-button::before {
@@ -2428,6 +2447,7 @@ a {
   background-color: transparent;
   border: 1.5px solid transparent;
   outline: none;
+  text-decoration: none;
 }
 
 .catalog-pagination-link-current {
