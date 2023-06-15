@@ -1301,7 +1301,8 @@ a {
   list-style-type: none;
   padding: 0;
   margin: 0;
-  gap: 30px;
+  column-gap: 30px;
+  row-gap: 40px;
 }
 
 .catalog-item {
@@ -2330,6 +2331,7 @@ a {
 
 .catalog-products {
   margin: 0 0 57px 0;
+
 }
 
 /* PAGINATION */
@@ -2534,6 +2536,7 @@ a {
   0% {
     transform: rotate(0deg);
   }
+
   100% {
     transform: rotate(360deg);
   }
