@@ -208,6 +208,7 @@ a {
   margin: 0;
   padding: 0;
   text-align: center;
+  max-width: 50%;
 }
 
 .navigation-link {
@@ -563,16 +564,17 @@ a {
   background-color: #e7e7e7;
   border-color: #b9b9b9;
   color: rgba(45, 52, 64, 0.65);
-}
-
-.input:disabled:hover {
-  background-color: #e7e7e7;
-  border-color: #b9b9b9;
-  color: #2d3440;
+  pointer-events: none;
 }
 
 .input-error {
   border-color: #ea5454;
+  font-family: 'Inter';
+  font-weight: 400;
+  font-size: 16px;
+  line-height: 20px;
+  outline: none;
+  color: #2d3440;
 }
 
 .input-error:hover {
@@ -924,6 +926,10 @@ a {
 
 /* MAIN */
 
+.main-container {
+  flex-grow: 1;
+}
+
 .page-main {
   width: 1170px;
   margin: 0 auto;
@@ -931,7 +937,6 @@ a {
   display: flex;
   flex-direction: column;
   row-gap: 80px;
-  flex-grow: 1;
 }
 
 /* SLIDER */
@@ -1845,6 +1850,7 @@ a {
   padding: 48px 0;
   width: 1170px;
   margin: 0 auto;
+  margin-top: auto;
 }
 
 .for-providers {
@@ -2194,7 +2200,7 @@ a {
 }
 
 .radio-label {
-  display: block;
+  display: flex;
   cursor: pointer;
   position: relative;
   font-weight: 400;
