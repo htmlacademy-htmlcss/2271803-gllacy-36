@@ -20,14 +20,10 @@
           <ul class="header-navigation-list">
             <li class="header-navigation-item">
               <div class="subcatalog-container">
-                <button class="catalog-button navigation-link" type="button">Каталог
-                  <svg width="16" height="17" viewBox="0 0 16 17" fill="none" xmlns="http://www.w3.org/2000/svg">
-                    <path fill-rule="evenodd" clip-rule="evenodd"
-                      d="M3.80812 7.0532C3.54777 6.79285 3.12566 6.79285 2.86531 7.0532C2.60496 7.31355 2.60496 7.73566 2.86531 7.99601L7.52565 12.6564C7.52771 12.6585 7.52979 12.6606 7.53189 12.6627C7.66259 12.7934 7.83404 12.8585 8.00534 12.8579C8.1753 12.8574 8.34511 12.7924 8.47478 12.6627C8.47687 12.6606 8.47894 12.6585 8.48099 12.6564L13.1414 7.99601C13.4017 7.73566 13.4017 7.31355 13.1414 7.0532C12.881 6.79285 12.4589 6.79285 12.1986 7.0532L8.00334 11.2484L3.80812 7.0532Z"
-                      fill="#2D3440" />
-                  </svg>
+                <button class="catalog-button" type="button">Каталог
                 </button>
-                <ul class="subcatalog-list">
+
+                <ul class="subcatalog-list pop-up-container">
                   <li class="subcatalog-item">
                     <a class="subcatalog-link subcatalog-current" href="#">Новинки</a>
                   </li>
@@ -43,7 +39,9 @@
                   <li class="subcatalog-item">
                     <a class="subcatalog-link" href="#">Мелорин</a>
                   </li>
+
                 </ul>
+
               </div>
             </li>
             <li class="header-navigation-item">
@@ -55,91 +53,83 @@
           </ul>
         </nav>
         <div class="user-list">
-          <a class="user-phone-number" href="tel:+78005558628">+7 800 555-86-28</a>
+          <a class="user-item user-phone-number" href="tel:+78005558628">+7 800 555-86-28</a>
 
-          <div class="search-item">
+          <div class="user-item search-item">
             <button class="search-button user-button" type="button" aria-label="Кнопка поиска."></button>
             <div class="pop-up-container search-container">
               <form class="search-form" action="https://echo.htmlacademy.ru/" method="get">
                 <input class="search-input input" type="search" name="search" placeholder="Поиск по сайту"
                   aria-label="Поиск по сайту." required>
               </form>
+              <button class="search-cancel-button" type="button" aria-label="Удалить введенный текст."></button>
             </div>
           </div>
 
-          <div class="login-item">
+          <div class="user-item login-item">
             <button class="login-button user-button" type="button">Вход</button>
             <div class="pop-up-container login-container">
-              <h3 class="login-title">Личный кабинет</h3>
+              <h3 class="login-title title">Личный кабинет</h3>
               <form class="login-form" action="https://echo.htmlacademy.ru/" method="get">
-                <input class="email-input input" type="text" name="e-mail" value="email@example.com"
+                <input class="email-input input login-input" type="text" name="e-mail" value="email@example.com"
                   aria-label="Поле ввода почты." required>
-                <input class="password-input input" type="password" name="password" value="qwerty"
+                <input class="password-input input login-input" type="password" name="password" value="*****"
                   aria-label="Поле ввода пароля." required>
-                <button class="login-form-button button" type="submit">Вход</button>
+                <button class="login-form-button button pink-button" type="submit">Войти</button>
                 <div class="login-container-link">
-                  <a class="forgot-password-link" href="#">Забыли пароль?</a>
-                  <a class="sign-up-link" href="#">Регистрация</a>
+                  <a class="login-help forgot-password-link" href="#">Забыли пароль?</a>
+                  <a class="login-help sign-up-link" href="#">Регистрация</a>
                 </div>
               </form>
             </div>
           </div>
 
-          <!--Для показа пустой страницы добавить класс cart-item-empty для cart-item-->
+          <!-- Для отображения пустой корзины необходимо заменить класс "cart-full" на класс "cart-empty". -->
 
-          <div class="cart-item">
-            <button class="user-button cart-button" type="button">
-              <span class="have-item">2 Товара</span>
-              <span class="have-no-item">Нет товаров</span>
+          <div class="user-item cart-item cart-full">
+            <button class="user-button cart-button" type="button" aria-label="Корзина.">
+              <span class="cart-description cart-full-description">2 товара</span>
+              <span class="cart-description cart-empty-description">Нет товаров</span>
             </button>
-
-            <div class="pop-over-container cart-container">
-              <div class="empty-cart-pop-over">
-                <p class="empty-cart-text">Ваша корзина пока пуста</p>
-              </div>
-              <div class="cart-pop-over">
-                <h3>Корзина</h3>
-                <ul class="cart-product-list">
-                  <li class="cart-product-item">
+            <div class="cart-container pop-up-container cart-empty-container">
+              <h3 class="cart-empty-text title">Ваша корзина пока пуста</h3>
+            </div>
+            <div class="pop-up-container cart-container cart-full-container">
+              <h3 class="cart-title title">Корзина</h3>
+              <ul class="cart-product-list">
+                <li class="cart-product-item">
+                  <div class="cart-image-container">
                     <img class="cart-product-item-photo" src="./images/header-cart-raspberries.png" width="46"
                       height="46" alt="Малиновое мороженое.">
-                    <div class="cart-product-link">
-                      <a class="cart-product-title">Малинка</a>
-                      <span class="cart-product-text">1 кг х 310 ₽</span>
-                    </div>
-                    <span class="cart-product-price">310 ₽</span>
-                    <button class="delete-product-button button" type="button" aria-label="Удалить продукт из корзины.">
-                      <svg width="10" height="10" viewBox="0 0 10 10" fill="none" xmlns="http://www.w3.org/2000/svg">
-                        <path fill-rule="evenodd" clip-rule="evenodd"
-                          d="M9.80303 1.13807C10.0634 0.877722 10.0634 0.455612 9.80303 0.195262C9.54268 -0.0650874 9.12057 -0.0650874 8.86022 0.195262L4.99914 4.05633L1.13807 0.195262C0.877722 -0.0650874 0.455612 -0.0650874 0.195262 0.195262C-0.0650874 0.455612 -0.0650874 0.877722 0.195262 1.13807L4.05633 4.99914L0.195262 8.86022C-0.0650874 9.12057 -0.0650874 9.54268 0.195262 9.80303C0.455612 10.0634 0.877722 10.0634 1.13807 9.80303L4.99914 5.94195L8.86022 9.80303C9.12057 10.0634 9.54268 10.0634 9.80303 9.80303C10.0634 9.54268 10.0634 9.12057 9.80303 8.86022L5.94195 4.99914L9.80303 1.13807Z"
-                          fill="#2D3440" />
-                      </svg>
-                    </button>
-                  </li>
-                  <li class="cart-product-item">
+                  </div>
+                  <div class="cart-product-link">
+                    <a class="cart-product-title">Малинка</a>
+                    <span class="cart-product-text">1 кг х 310 ₽</span>
+                  </div>
+                  <span class="cart-product-price">310 ₽</span>
+                  <button class="delete-product-button button" type="button" aria-label="Удалить продукт из корзины."></button>
+                </li>
+                <li class="cart-product-item">
+                  <div class="cart-image-container">
                     <img class="cart-product-item-photo" src="./images/header-cart-bubble-gum.png" width="46"
                       height="46" alt="Мороженое Бабл-гам.">
-                    <div class="cart-product-link">
-                      <a class="cart-product-title">Бабл-гам</a>
-                      <span class="cart-product-text">1,5 кг х 320 ₽</span>
-                    </div>
-                    <span class="cart-product-price">480 ₽</span>
-                    <button class="delete-product-button button" type="button" aria-label="Удалить продукт из корзины.">
-                      <svg width="10" height="10" viewBox="0 0 10 10" fill="none" xmlns="http://www.w3.org/2000/svg">
-                        <path fill-rule="evenodd" clip-rule="evenodd"
-                          d="M9.80303 1.13807C10.0634 0.877722 10.0634 0.455612 9.80303 0.195262C9.54268 -0.0650874 9.12057 -0.0650874 8.86022 0.195262L4.99914 4.05633L1.13807 0.195262C0.877722 -0.0650874 0.455612 -0.0650874 0.195262 0.195262C-0.0650874 0.455612 -0.0650874 0.877722 0.195262 1.13807L4.05633 4.99914L0.195262 8.86022C-0.0650874 9.12057 -0.0650874 9.54268 0.195262 9.80303C0.455612 10.0634 0.877722 10.0634 1.13807 9.80303L4.99914 5.94195L8.86022 9.80303C9.12057 10.0634 9.54268 10.0634 9.80303 9.80303C10.0634 9.54268 10.0634 9.12057 9.80303 8.86022L5.94195 4.99914L9.80303 1.13807Z"
-                          fill="#2D3440" />
-                      </svg>
-                    </button>
-                  </li>
-                </ul>
+                  </div>
+                  <div class="cart-product-link">
+                    <a class="cart-product-title">Бабл-гам</a>
+                    <span class="cart-product-text">1,5 кг х 320 ₽</span>
+                  </div>
+                  <span class="cart-product-price">480 ₽</span>
+                  <button class="delete-product-button button" type="button"
+                    aria-label="Удалить продукт из корзины."></button>
+                </li>
+              </ul>
 
-                <div class="cart-product-total">
-                  <button class="shopping-button button button-decorated" type="button">Оформить заказ</button>
-                  <span class="total-price">Итого: 790 ₽</span>
-                </div>
+              <div class="cart-product-total">
+                <button class="shopping-button button pink-button" type="button">Оформить заказ</button>
+                <span class="total-price">Итого: 790 ₽</span>
               </div>
             </div>
+
           </div>
         </div>
       </header>
@@ -436,28 +426,34 @@
 
         <ul class="social-list">
           <li class="social-item">
-            <a class="social-link social-telegram" href="#" aria-label="Телеграмм."></a>
+            <a class="social-link social-telegram" href="https://t.me/htmlacademy" aria-label="Телеграмм."></a>
           </li>
           <li class="social-item">
-            <a class="social-link social-vk" href="#" aria-label="ВКонтакте."></a>
+            <a class="social-link social-vk" href="https://vk.com/htmlacademy" aria-label="ВКонтакте."></a>
           </li>
           <li class="social-item">
-            <a class="social-link social-youtube" href="#" aria-label="Ютуб."></a>
+            <a class="social-link social-youtube" href="https://www.youtube.com/user/htmlacademyru" aria-label="Ютуб."></a>
           </li>
         </ul>
 
 
-        <div class="footer-navigation">
-          <h3 class="footer-navigation-provider">Для поставщиков</h3>
-          <a class="footer-navigation-documets" href="#">Наши документы</a>
-          <a class="footer-navigation-about-production" href="#">О производстве</a>
-          <a class="footer-navigation-eco-standarts" href="#">Экологические стандарты</a>
+        <div class="for-providers">
+          <h3 class="for-providers-title">Для поставщиков</h3>
+          <a class="for-providers-link" href="#">Наши документы</a>
+          <a class="for-providers-link" href="#">О производстве</a>
+          <a class="for-providers-link" href="#">Экологические стандарты</a>
         </div>
 
         <div class="footer-logo-container">
           <a class="footer-logo" href="https://htmlacademy.ru/" aria-label="Ссылка на сайт htmlacademy.ru.">
-            <p class="footer-logo-text">Сделано в <a href="https://htmlacademy.ru/"
-                aria-label="Ссылка на сайт htmlacademy.ru.">.html academy</a>© 2021</p>
+            <img src="./images/logo-htmlacademy.svg" width="93" height="27" alt="Логотип html academy.">
+          </a>
+          <p class="footer-logo-text">Сделано в
+            <a class="footer-logo-link" href="https://htmlacademy.ru/" aria-label="Ссылка на сайт htmlacademy.ru.">.html
+              academy</a>
+            © 2021
+          </p>
+
         </div>
 
 
