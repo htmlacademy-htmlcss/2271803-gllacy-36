@@ -2326,32 +2326,126 @@ a {
   pointer-events: none;
 }
 
+/* CATALOG-PRODUCTS */
 
+.catalog-products {
+  margin: 0 0 57px 0;
+}
 
+/* PAGINATION */
 
+.catalog-pagination {
+  display: grid;
+  grid-template-columns: 1fr 1fr 1fr;
+  margin: 0 0 81px 0;
+  position: relative;
+}
 
+.catalog-pagination::before {
+  content: "";
+  position: absolute;
+  width: 100%;
+  height: 1px;
+  background-color: rgba(252, 252, 252, 0.3);
+  bottom: -81px;
+  left: 0;
+}
 
+.button-show-more {
+  grid-column: 2 / 3;
+  justify-self: center;
+  align-self: start;
+  transform: translateX(-8px);
+}
 
+.pagination {
+  grid-column: 3 / -1;
+  justify-self: right;
+  display: flex;
+  align-items: center;
+  padding: 0;
+  column-gap: 8px;
+}
 
+.catalog-pagination-button {
+  width: 16px;
+  height: 16px;
+  position: relative;
+}
 
+.catalog-pagination-button::before {
+  content: "";
+  position: absolute;
+  background-color: #2d3440;
+  width: 100%;
+  height: 100%;
+  top: 0;
+  left: 0;
+  -webkit-mask: url("../images/arrow.svg");
+  mask: url("../images/arrow.svg");
+  -webkit-mask-repeat: no-repeat;
+  mask-repeat: no-repeat;
+}
 
+.catalog-pagination-button-prev::before {
+  transform: rotate(180deg);
+}
 
+.catalog-pagination-button:hover {
+  opacity: 0.7;
+}
 
+.catalog-pagination-button:active {
+  opacity: 0.4;
+}
 
+.catalog-pagination-list {
+  display: flex;
+  list-style-type: none;
+  padding: 0;
+  margin: 0;
+  flex-wrap: wrap;
+  max-width: 300px;
+}
 
+.catalog-pagination-link {
+  line-height: 20px;
+  color: #2d3440;
+  display: flex;
+  align-items: center;
+  justify-content: center;
+  min-width: 24px;
+  min-height: 24px;
+  border-radius: 50px;
+  background-color: transparent;
+  border: 1.5px solid transparent;
+  outline: none;
+}
 
+.catalog-pagination-link-current {
+  background-color: #fcfcfc;
+  pointer-events: none;
+}
 
+.catalog-pagination-link:not(.catalog-pagination-link-current):hover {
+  background-color: rgba(252, 252, 252, 0.5);
+  border-color: transparent;
+}
 
+.catalog-pagination-link:not(.catalog-pagination-link-current):focus-visible {
+  background-color: rgba(252, 252, 252, 0.3);
+  border-color: #2d3440;
+}
 
+.catalog-pagination-link:not(.catalog-pagination-link-current):active {
+  background-color: rgba(252, 252, 252, 0.5);
+  border-color: #fcfcfc;
+}
 
-
-
-
-
-
-
-
-
+.catalog-pagination-link-disabled {
+  opacity: 0.3;
+  pointer-events: none;
+}
 
 /* MODAL */
 

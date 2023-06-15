@@ -233,50 +233,49 @@
               </fieldset>
             </div>
             <div class="catalog-filter-container topping-container">
-            <fieldset class="catalog-filter-group">
-              <legend class="catalog-filter-title">Наполнители:</legend>
-              <ul class="catalog-filter-list">
-                <li class="catalog-filter-item">
-                  <label class="radio-label">
-                    шоколадные
-                    <input class="radio-input visually-hidden" type="checkbox" name="topping" value="chocolate">
-                    <span class="checkbox-description"></span>
-                  </label>
-                </li>
-                <li class="catalog-filter-item">
-                  <label class="radio-label">
-                    сахарные посыпки
-                    <input class="radio-input visually-hidden" type="checkbox" name="topping"
-                      value="sugar-sprinkles">
-                    <span class="checkbox-description"></span>
-                  </label>
-                </li>
-                <li class="catalog-filter-item">
-                  <label class="radio-label">
-                    фрукты
-                    <input class="radio-input visually-hidden" type="checkbox" name="topping" value="fruits">
-                    <span class="checkbox-description"></span>
-                  </label>
-                </li>
-                <li class="catalog-filter-item">
-                  <label class="radio-label">
-                    сиропы
-                    <input class="radio-input visually-hidden" type="checkbox" name="topping" value="syrups">
-                    <span class="checkbox-description"></span>
-                  </label>
-                </li>
-                <li class="catalog-filter-item">
-                  <label class="radio-label">
-                    джемы
-                    <input class="radio-input visually-hidden" type="checkbox" name="topping" value="jams">
-                    <span class="checkbox-description"></span>
-                  </label>
-                </li>
-              </ul>
-            </fieldset>
+              <fieldset class="catalog-filter-group">
+                <legend class="catalog-filter-title">Наполнители:</legend>
+                <ul class="catalog-filter-list">
+                  <li class="catalog-filter-item">
+                    <label class="radio-label">
+                      шоколадные
+                      <input class="radio-input visually-hidden" type="checkbox" name="topping" value="chocolate">
+                      <span class="checkbox-description"></span>
+                    </label>
+                  </li>
+                  <li class="catalog-filter-item">
+                    <label class="radio-label">
+                      сахарные посыпки
+                      <input class="radio-input visually-hidden" type="checkbox" name="topping" value="sugar-sprinkles">
+                      <span class="checkbox-description"></span>
+                    </label>
+                  </li>
+                  <li class="catalog-filter-item">
+                    <label class="radio-label">
+                      фрукты
+                      <input class="radio-input visually-hidden" type="checkbox" name="topping" value="fruits">
+                      <span class="checkbox-description"></span>
+                    </label>
+                  </li>
+                  <li class="catalog-filter-item">
+                    <label class="radio-label">
+                      сиропы
+                      <input class="radio-input visually-hidden" type="checkbox" name="topping" value="syrups">
+                      <span class="checkbox-description"></span>
+                    </label>
+                  </li>
+                  <li class="catalog-filter-item">
+                    <label class="radio-label">
+                      джемы
+                      <input class="radio-input visually-hidden" type="checkbox" name="topping" value="jams">
+                      <span class="checkbox-description"></span>
+                    </label>
+                  </li>
+                </ul>
+              </fieldset>
 
-            <button class="button filter-button" type="submit">Применить</button>
-          </div>
+              <button class="button filter-button" type="submit">Применить</button>
+            </div>
           </form>
         </section>
 
@@ -469,32 +468,30 @@
 
         <section class="catalog-pagination">
           <h2 class="visually-hidden">Пагинация.</h2>
-          <button class="button button-show-more" type="button">Показать еще</button>
-          <ul class="catalog-pagination-list">
-            <li class="catalog-pagination-item">
-              <a class="catalog-pagination-button catalog-pagination-button-prev"
-                aria-label="Переход на предыдущую страницу." href="#"></a>
-            </li>
-            <li class="catalog-pagination-item">
-              <a class="catalog-pagination-link" href="#">1</a>
-            </li>
-            <li class="catalog-pagination-item">
-              <a class="catalog-pagination-link" href="#">2</a>
-            </li>
-            <li class="catalog-pagination-item">
-              <a class="catalog-pagination-link" href="#">3</a>
-            </li>
-            <li class="catalog-pagination-item">
-              <a class="catalog-pagination-link" href="#">4</a>
-            </li>
-            <li class="catalog-pagination-item">
-              <a class="catalog-pagination-link" href="#">5</a>
-            </li>
-            <li class="catalog-pagination-item">
-              <a class="catalog-pagination-button catalog-pagination-button-next"
-                aria-label="Переход на следующую страницу."></a>
-            </li>
-          </ul>
+          <a class="button white-button button-show-more" href="#">Показать еще</a>
+          <div class="pagination">
+            <a class="catalog-pagination-button catalog-pagination-button-prev catalog-pagination-link-disabled"
+              aria-label="Переход на предыдущую страницу." href="#"></a>
+            <ul class="catalog-pagination-list">
+              <li class="catalog-pagination-item">
+                <a class="catalog-pagination-link catalog-pagination-link-current" href="#">1</a>
+              </li>
+              <li class="catalog-pagination-item">
+                <a class="catalog-pagination-link" href="#">2</a>
+              </li>
+              <li class="catalog-pagination-item">
+                <a class="catalog-pagination-link" href="#">3</a>
+              </li>
+              <li class="catalog-pagination-item">
+                <a class="catalog-pagination-link" href="#">4</a>
+              </li>
+              <li class="catalog-pagination-item">
+                <a class="catalog-pagination-link" href="#">5</a>
+              </li>
+            </ul>
+            <a class="catalog-pagination-button catalog-pagination-button-next"
+              aria-label="Переход на следующую страницу."></a>
+          </div>
         </section>
 
 
