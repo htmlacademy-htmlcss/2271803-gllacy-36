@@ -1974,8 +1974,8 @@ a {
 .breadcrumbs-item::after {
   content: "";
   position: absolute;
-  top: 6px;
-  right: -20px;
+  top: 9px;
+  right: -23px;
   width: 12px;
   height: 12px;
   background-image: url("../images/catalog-chevrons-right.svg");
