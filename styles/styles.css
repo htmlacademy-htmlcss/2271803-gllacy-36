@@ -2015,6 +2015,248 @@ a {
   color: #2d3440;
 }
 
+/* CATALOG-FILTER */
+
+.catalog-filter {
+  margin: 0 0 44px 0;
+}
+
+.catalog-filter-form {
+  display: flex;
+  flex-direction: column;
+  row-gap: 16px;
+}
+
+.catalog-filter-container {
+  display: flex;
+  column-gap: 24px;
+  row-gap: 10px;
+}
+
+.catalog-filter-group {
+  border: none;
+  padding: 0;
+  margin: 0;
+}
+
+.catalog-filter-title {
+  font-weight: 400;
+  font-size: 14px;
+  line-height: 20px;
+  color: #2d3440;
+  margin: 0 0 8px 0;
+  padding: 0 0 0 16px;
+}
+
+.catalog-filter-title input {
+  width: 25.5px;
+  padding: 0;
+  font-family: "Inter", sans-serif;
+  font-weight: 400;
+  font-size: 14px;
+  line-height: 14px;
+  color: #2d3440;
+  background-color: transparent;
+  border: none;
+  outline: none;
+}
+
+.catalog-filter-title input:hover {
+  background-color: rgba(252, 252, 252, 0.3);
+}
+
+.catalog-filter-title input:focus-visible {
+  background-color: #fcfcfc;
+}
+
+.catalog-filter-title input:disabled {
+  opacity: 0.3;
+  pointer-events: none;
+}
+
+.catalog-filter-list {
+  display: flex;
+  flex-wrap: wrap;
+  column-gap: 17px;
+  row-gap: 10px;
+  list-style-type: none;
+  padding: 8px 24px 8px 24px;
+  margin: 0;
+  background-color: rgba(252, 252, 252, 0.3);
+  border-radius: 20px;
+}
+
+.catalog-select {
+  background-color: rgba(252, 252, 252, 0.3);
+  border: 2px solid transparent;
+  width: 196px;
+  height: 36px;
+  font-family: "Inter", sans-serif;
+  font-weight: 400;
+  font-size: 14px;
+  line-height: 20px;
+  color: #000000;
+  -webkit-appearance: none;
+  appearance: none;
+  padding: 0 30px 0 14px;
+  border-radius: 20px;
+  background-image: url("../images/header-arrow-down.svg");
+  background-repeat: no-repeat;
+  background-size: 16px 16px;
+  background-position: 165px center;
+  outline: none;
+}
+
+.catalog-select:hover {
+  background-color: rgba(252, 252, 252, 0.5);
+}
+
+.catalog-select:focus {
+  background-color: rgba(252, 252, 252, 0.4);
+  border-color: #fcfcfc;
+}
+
+.range-scale {
+  display: flex;
+  position: relative;
+  width: 196px;
+  padding: 10px 16px 12px 16px;
+  z-index: 1;
+  background-color: rgba(252, 252, 252, 0.3);
+  border-radius: 20px;
+}
+
+.range-scale::before {
+  content: "";
+  position: absolute;
+  width: calc(100% - 32px);
+  height: 2px;
+  background-color: #565c66;
+  opacity: 0.3;
+  top: 17px;
+  left: 16px;
+  z-index: -1;
+}
+
+.range-scale::after {
+  content: "";
+  position: absolute;
+  width: 56px;
+  height: 2px;
+  background-color: #565c66;
+  top: 17px;
+  left: 56px;
+  z-index: -1;
+}
+
+.toggle-wrapper {
+  display: flex;
+  justify-content: center;
+  padding: 2px 0 0 0;
+}
+
+.min-price {
+  transform: translateX(26px);
+}
+
+.max-price {
+  transform: translateX(86px);
+}
+
+.range-toggle {
+  position: relative;
+  width: 12px;
+  height: 12px;
+  background-color: #fcfcfc;
+  border: 4px solid #2d3440;
+  outline: 2px solid #2d3440;
+  border-radius: 50%;
+  padding: 0;
+}
+
+.range-toggle:hover {
+  background-color: #2d3440;
+  border-color: #fcfcfc;
+  outline-color: #fcfcfc;
+}
+
+.range-toggle:focus-visible {
+  background-color: #2d3440;
+  border-color: #fcfcfc;
+  outline-color: #2d3440;
+}
+
+.range-toggle:active {
+  background-color: #2d3440;
+  border-color: #2d3440;
+  outline-color: #2d3440;
+}
+
+.radio-label {
+  display: block;
+  cursor: pointer;
+  position: relative;
+  font-weight: 400;
+  font-size: 14px;
+  line-height: 20px;
+  color: #2d3440;
+  padding: 0 0 0 24px;
+}
+
+.radio-description::before {
+  content: "";
+  position: absolute;
+  background-color: transparent;
+  border: 1.5px solid #2d3440;
+  width: 16px;
+  height: 16px;
+  border-radius: 50%;
+  top: 2px;
+  left: 0;
+}
+
+.radio-input:checked + .radio-description::after {
+  content: "";
+  position: absolute;
+  background-color: #2d3440;
+  background-size: 6px 6px;
+  width: 16px;
+  height: 16px;
+  border-radius: 50%;
+  top: 2px;
+  left: 0;
+  transform: scale(0.4);
+}
+
+.radio-input:hover + .radio-description::before,
+.radio-input:focus-visible + .radio-description::before {
+  border-color: #fcfcfc;
+}
+
+.radio-input:hover + .radio-description::after,
+.radio-input:focus-visible + .radio-description::after {
+  background-color: #fcfcfc;
+}
+
+.radio-input:disabled + .radio-description::before {
+  border-color: #2d3440;
+  opacity: 0.5;
+}
+
+.radio-input:disabled + .radio-description::after {
+  background-color: #2d3440;
+  opacity: 0.5;
+}
+
+.topping-block {
+  column-gap: 18px;
+}
+
+.topping-block .catalog-filter-list {
+  padding: 10px 24px 10px 24px;
+}
+
+
 
 
 
