@@ -47,3 +47,43 @@ buttonNext.addEventListener('click', () => {
   sliderTabButtons[counter].classList.add('slider-pagination-button-current');
   changeColor(slides[counter].dataset.theme);
 });
+
+// SEARCH-INPUT-CANCEL
+
+const searchInput = document.querySelector('.search-input');
+const searchCancelButton = document.querySelector('.search-cancel-button');
+searchCancelButton.addEventListener('click', () => {
+  searchInput.value = '';
+  searchInput.focus();
+});
+
+// MODAL
+
+const feedback = document.querySelector('.modal-link');
+const feedbackModal = document.querySelector('.modal-container');
+const modalClose = feedbackModal.querySelector('.modal-close-button');
+
+feedback.addEventListener('click', (evt) => {
+  evt.preventDefault();
+  feedbackModal.classList.add('modal-show');
+});
+
+modalClose.addEventListener('click', (evt) => {
+  evt.preventDefault();
+  feedbackModal.classList.remove('modal-show');
+});
+
+feedbackModal.addEventListener('click', (evt) => {
+  if (!evt.target.closest('.modal')) {
+    feedbackModal.classList.remove('modal-show');
+  }
+});
+
+window.addEventListener('keydown', (evt) => {
+  if (evt.key === 27) {
+    if (feedbackModal.classList.contains('modal-show')) {
+      evt.preventDefault();
+      feedbackModal.classList.remove('modal-show');
+    }
+  }
+});

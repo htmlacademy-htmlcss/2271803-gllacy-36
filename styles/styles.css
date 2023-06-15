@@ -471,7 +471,6 @@ a {
   color: #2D3440;
   padding: 6px 0 6px 0;
   margin-right: 16px;
-  white-space: nowrap;
 }
 
 .user-phone-number:hover {
@@ -618,7 +617,7 @@ a {
 }
 
 .login-button {
-  height: 32px;
+  min-height: 32px;
   padding: 4px 14px 4px 36px;
   border-radius: 30px;
   cursor: pointer;
@@ -1938,4 +1937,127 @@ a {
 
 .footer-logo-link:active {
   opacity: 0.3;
+}
+
+
+
+
+
+
+
+
+
+
+
+
+
+
+
+
+
+
+
+
+
+
+
+
+
+
+
+
+
+
+
+
+/* MODAL */
+
+.modal-container {
+  display: none;
+  position: fixed;
+  top: 0;
+  left: 0;
+  width: 100%;
+  height: 100%;
+  background-color: rgba(45, 52, 64, 0.3);
+  z-index: 10;
+}
+
+.modal-show {
+  display: flex;
+}
+
+.modal {
+  position: relative;
+  margin: auto;
+  background: #fcfcfc;
+  box-shadow: 0 15px 40px rgba(45, 52, 64, 0.12);
+  border-radius: 8px;
+  width: 570px;
+  padding: 64px 64px 66px 64px;
+}
+
+.modal-title {
+  font-weight: 700;
+  font-size: 24px;
+  line-height: 30px;
+  margin: 0 0 32px 0;
+}
+
+.modal-close-button {
+  position: absolute;
+  top: 32px;
+  right: 32px;
+  width: 20px;
+  height: 20px;
+  background-color: transparent;
+  background-image: url("../images/header-search-cross.svg");
+  background-repeat: no-repeat;
+  background-position: center;
+  border: none;
+  padding: 0;
+  cursor: pointer;
+}
+
+.feedback-form {
+  display: flex;
+  flex-wrap: wrap;
+  justify-content: right;
+}
+
+.modal-input {
+  width: 442px;
+  height: 48px;
+  margin: 0 0 16px 0;
+  padding: 14px 16px 14px 16px;
+}
+
+.modal-textarea {
+  width: 442px;
+  height: 149px;
+  font-family: "Inter", sans-serif;
+  font-size: 16px;
+  line-height: 20px;
+  background-color: #ffffff;
+  border: 1px solid #b9b9b9;
+  border-radius: 4px;
+  margin: 0 0 32px 0;
+  padding: 14px 16px 14px 16px;
+  resize: none;
+}
+
+.modal-textarea::placeholder {
+  color: #b9b9b9;
+  opacity: 1;
+}
+
+/* KEYFRAMES */
+
+@keyframes loading {
+  0% {
+    transform: rotate(0deg);
+  }
+  100% {
+    transform: rotate(360deg);
+  }
 }
