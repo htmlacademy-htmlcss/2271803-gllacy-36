@@ -538,6 +538,9 @@ img {
 }
 
 .search-input {
+  font-family: "Inter", sans-serif;
+  font-style: normal;
+  font-weight: 400;
   width: 100%;
   height: 48px;
   padding: 14px 16px 14px 16px;
@@ -681,6 +684,11 @@ img {
   height: 48px;
   padding: 14px 16px 14px 16px;
   margin: 0 0 16px 0;
+  font-family: "Inter", sans-serif;
+  font-style: normal;
+  font-weight: 400;
+  font-size: 16px;
+  line-height: 20px;
 }
 
 .login-input:last-of-type {
@@ -1363,6 +1371,7 @@ img {
   line-height: 24px;
   margin: 0 0 8px 0;
   color: #2d3440;
+  text-decoration: none;
 }
 
 .catalog-title:hover {
@@ -1631,6 +1640,10 @@ img {
   height: 48px;
   padding: 0 0 0 16px;
   flex-grow: 1;
+  font-family: "Inter", sans-serif;
+  font-weight: 400;
+  font-size: 16px;
+  line-height: 20px;
 }
 
 .subcatalog-button {
@@ -1740,6 +1753,10 @@ img {
 .delivery-input {
   height: 48px;
   padding: 0 0 0 16px;
+  font-family: "Inter", sans-serif;
+  font-weight: 400;
+  font-size: 16px;
+  line-height: 20px;
 }
 
 .tooltip-content {
@@ -1818,6 +1835,10 @@ img {
   max-width: 343px;
 }
 
+.contacts-phone {
+  text-decoration: none;
+}
+
 .contacts-title,
 .contacts-phone-title {
   font-weight: 400;
@@ -1833,6 +1854,7 @@ img {
   font-weight: 700;
   font-size: 20px;
   line-height: 24px;
+  font-style: normal;
   color: #2d3440;
 }
 
@@ -2535,6 +2557,12 @@ img {
   height: 48px;
   margin: 0 0 16px 0;
   padding: 14px 16px 14px 16px;
+  font-family: "Inter", sans-serif;
+  font-style: normal;
+  font-weight: 400;
+  font-size: 16px;
+  line-height: 20px;
+  color: #B9B9B9;
 }
 
 .modal-textarea {
