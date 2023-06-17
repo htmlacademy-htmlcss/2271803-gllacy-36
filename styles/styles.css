@@ -207,6 +207,7 @@ img {
   padding: 0;
   text-align: center;
   max-width: 50%;
+  flex-wrap: wrap;
 }
 
 .navigation-link {
@@ -1267,7 +1268,7 @@ img {
   position: relative;
   display: flex;
   flex-direction: column;
-  min-width: 570px;
+  max-width: 570px;
   min-height: 268px;
   background-color: #ff7799;
   border-radius: 16px;
