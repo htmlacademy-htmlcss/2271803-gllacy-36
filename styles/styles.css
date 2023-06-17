@@ -1463,7 +1463,7 @@ img {
 .advantages {
   padding: 80px 64px 80px 64px;
   position: relative;
-  background-image: url("../images/background-waffle.png");
+  background-image: url("../images/background-waffle.jpg");
   background-color: #f6f6f6;
   background-repeat: no-repeat;
   background-size: cover;
@@ -1593,7 +1593,7 @@ img {
 
 .subscribe {
   width: 570px;
-  background-image: url("../images/background-subscription.png");
+  background-image: url("../images/background-subscription.jpg");
   background-color: #f6f6f6;
   background-repeat: no-repeat;
   background-size: cover;
