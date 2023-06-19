@@ -1316,6 +1316,10 @@ img {
   margin-bottom: 57px;
 }
 
+.main-catalog {
+  margin: 0;
+}
+
 .main-catalog-title {
   text-align: center;
   margin: 0 0 56px 0;
